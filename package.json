@@ -1,11 +1,11 @@
 {
-  "name": "sk-plugin-python-demo",
+  "name": "sk-plugin-BMO055",
   "version": "1.0.0",
-  "description": "Demo Signal K Node server plugin that uses Python",
+  "description": "Signal K Node server plugin BMO055 IMU sensor over I2C",
   "main": "index.js",
   "keywords": [
-    "signalk-node-server-plugin"
+    "signalk-node-BMO055"
   ],
-  "author": "Teppo Kurki <teppo.kurki@iki.fi> (https://github.com/tkurki)",
+  "author": "Tom Munnecke munnecke@gmail.com https://github.com/munnecke/sk-plugin-BMO055",
   "license": "Apache-2.0"
 }
