@@ -13,7 +13,7 @@ def outputSk():  # retreive data from the sensor and put into JSON forma
     bear = "'values': {'path': 'environment/compass','value': " + str(sensor.euler[0]) + " }"
     heel = "'values': {'path': 'environment/heel','value': " + str(sensor.euler[1]) + " }"
     pitch = "'values': {'path': 'environment/pitch','value': " + str(sensor.euler[2]) + " }"
-    skData = "{'updates':{" +temp+bear+heel+pitch+ "}"
+    skData = "{'updates':{" + temp + bear + heel + pitch + "}"
     
 sys.stdout.write(json.dumps(skData) + '\n' + json.dumps(skData))
     sys.stdout.write('\n')
