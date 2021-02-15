@@ -1,38 +1,61 @@
 {
   "type": "object",
   "properties": {
-    "multipleParametersArray": {
+    "Linear_Acceleration": {
       "type": "array",
-      "title": "Example of multiple repeated parameters",
+      "title": "Linear accceleration vector",
       "items": {
         "type": "object",
         "required": [
-          "param1",
-          "param2"
+          "bearing_accel",
+          "heel_accel",
+          "pitch_accel",
+          "RMS_accel"
         ],
         "properties": {
-          "param1": {
-            "type": "string",
-            "title": "Parameter 1",
-            "default": "0.0.0.0"
-          },
-          "param2": {
+          "bearing_accel": {
             "type": "number",
-            "title": "Parameter 2",
-            "default": 12345
+            "title": "bearing accel",
+            "default": 0
+          },
+          "heel_accel": {
+            "type": "number",
+            "title": "heel accel",
+            "default": 0
+          },
+          "pitch_accel": {
+            "type": "number",
+            "title": "pitch accel",
+            "default": 0
+          },
+          "RMS_accel": {
+            "type": "number",
+            "title": "scalar accel",
+            "default": 0
           }
+,
         }
       }
     },
-    "numberParameterX": {
+    "IMU_temperature": {
       "type": "number",
-      "title": "Param X",
-      "default": 60
+      "title": "temp of IMU case",
+      "default": 0
     },
-    "numberParameterY": {
+    "bearing_angle": {
       "type": "number",
-      "title": "Param Y",
-      "default": 360
+      "title": "magnetic bearing",
+      "default": 0
+    },
+    "heel_angle": {
+      "type": "number",
+      "title": "magnetic heel",
+      "default": 0
+    },
+    "pitch_angle": {
+      "type": "number",
+      "title": "magnetic pitch",
+      "default": 0
     }
   }
 }
