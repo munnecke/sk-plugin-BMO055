@@ -1,5 +1,5 @@
 
-({
+{
     title: 'Control IMU reporting',
     type: 'object',
     properties: {
@@ -19,6 +19,6 @@
         default: 0
       }
     }
-  })
+  }
 
 
