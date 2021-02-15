@@ -1,60 +1,24 @@
-{
-  "type": "object",
-  "properties": {
-    "Linear_Acceleration": {
-      "type": "array",
-      "title": "Linear accceleration vector",
-      "items": {
-        "type": "object",
-        "required": [
-          "bearing_accel",
-          "heel_accel",
-          "pitch_accel",
-          "RMS_accel"
-        ],
-        "properties": {
-          "bearing_accel": {
-            "type": "number",
-            "title": "bearing accel",
-            "default": 0
-          },
-          "heel_accel": {
-            "type": "number",
-            "title": "heel accel",
-            "default": 0
-          },
-          "pitch_accel": {
-            "type": "number",
-            "title": "pitch accel",
-            "default": 0
-          },
-          "RMS_accel": {
-            "type": "number",
-            "title": "scalar accel",
-            "default": 0
-          }
-        }
+
+({
+    title: 'Control IMU reporting',
+    type: 'object',
+    properties: {
+      interval: {
+        type: 'number',
+        title: 'Interval between updates in seconds (0 is once upon plugin start when datetime received)',
+        default: 0
+      },
+      sentry_mode: {
+        type: 'boolean',
+        title: 'Turn on Sentry Mode',
+        default: false
+      },
+      sentry_sensitivity: {
+        type: 'number',
+        title: 'Sensitivity to acceleration that will trigger alert',
+        default: 0
       }
-    },
-    "IMU_temperature": {
-      "type": "number",
-      "title": "temp of IMU case",
-      "default": 0
-    },
-    "bearing_angle": {
-      "type": "number",
-      "title": "magnetic bearing",
-      "default": 0
-    },
-    "heel_angle": {
-      "type": "number",
-      "title": "magnetic heel",
-      "default": 0
-    },
-    "pitch_angle": {
-      "type": "number",
-      "title": "magnetic pitch",
-      "default": 0
     }
-  }
-}
+  })
+
+
