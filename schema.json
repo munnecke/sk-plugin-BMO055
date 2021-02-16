@@ -1,24 +1,24 @@
-
 {
-    title: 'Control IMU reporting',
-    type: 'object',
+    title: "Control IMU reporting",
+    type: "object",
     properties: {
       interval: {
-        type: 'number',
-        title: 'Interval between updates in seconds (0 is once upon plugin start when datetime received)',
+        type: "number",
+        title: "Interval between updates in seconds (0 is once upon plugin start when datetime received)",
         default: 0
       },
       sentry_mode: {
-        type: 'boolean',
-        title: 'Turn on Sentry Mode',
+        type: "boolean",
+        title: "Turn on Sentry Mode",
         default: false
       },
       sentry_sensitivity: {
-        type: 'number',
-        title: 'Sensitivity to acceleration that will trigger alert',
+        type: "number",
+        title: "Sensitivity to acceleration that will trigger alert",
         default: 0
       }
     }
   }
+
 
 
