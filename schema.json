@@ -1,7 +1,7 @@
 {
     "title": "Control IMU reporting",
     "type": "object",
-    "properties": {
+    "properties": [{
       "interval": {
         "type": "number",
         "title": "Interval between updates in seconds (0 is once upon plugin start when datetime received)",
@@ -17,7 +17,7 @@
         "title": "Sensitivity to acceleration that will trigger alert",
         "default" : 0
       }
-    }
+    }]
   }
 
 
