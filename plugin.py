@@ -15,8 +15,11 @@ def outputSk():  # retreive data from the sensor and put into JSON forma
     pitch = ' {"path": "environment.pitch","value": ' + str(sensor.euler[2]) + ' }' #note no trailing comma on last one
     skData = '{"updates":[{"values":[' + temp + bearing + heel + pitch + ']}]}'
 
-    
-sys.stdout.write(json.dumps(skData) + '\n' + json.dumps(skData))
+    {
+  #"type": "I2C",
+  #"label": "I²C Bus #0",
+  #"src": "14"
+}sys.stdout.write(json.dumps(skData) + '\n' + json.dumps(skData))
     sys.stdout.write('\n')
     sys.stdout.flush()
     n += 1
